@@ -15,4 +15,8 @@ export class EmployeeService {
     return this.httpClient.get<Employee[]>(this.base_url + "getAllRecord");
   }
 
+  addRecord(employee: Employee): Observable<Object>{
+    return this.httpClient.post(this.base_url + "addRecord", employee);
+  }
+
 }
