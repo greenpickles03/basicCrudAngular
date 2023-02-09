@@ -17,9 +17,11 @@
       <td>{{employee.email}}</td>
       <td>
         <button style="margin: 5px" (click)="viewDetailsById(employee.id)" type="button" class="btn bg-primary">Update</button>
-        <button style="margin: 5px" (click)="viewDetailsById(employee.id)" type="button" class="btn bg-success ">View</button>
+        <button style="margin: 5px" (click)="viewDetailsById(employee.id)" class="btn bg-success ">View</button>
       </td>
     </tr>
   </tbody>
 </table>
+
+<!--<app-employee-modal [title]="'Modal Title'" ></app-employee-modal>-->
 
