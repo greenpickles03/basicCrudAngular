@@ -24,4 +24,8 @@ export class EmployeeListComponent implements OnInit{
     });
   }
 
+  viewDetailsById(id:number){
+    console.log("get ID: " + id)
+  }
+
 }

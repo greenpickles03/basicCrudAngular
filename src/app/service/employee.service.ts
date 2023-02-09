@@ -19,4 +19,8 @@ export class EmployeeService {
     return this.httpClient.post(this.base_url + "addRecord", employee);
   }
 
+  updateEmployeeRecord(employee: Employee): Observable<Object>{
+    return this.httpClient.post(this.base_url + "updateEmployeeRecord", employee)
+  }
+
 }
